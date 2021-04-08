@@ -1,0 +1,29 @@
+[
+    {
+        "id": "online-shop",
+        "name": "Online Shop",
+        "imgUrl": "https://raw.githubusercontent.com/andr-ll/portfolio/gh-pages/assets/img/Products/Coach.png",
+        "descriptionRus": "Проект-портфолио для тренера по фигурному катанию. Лендинг пейдж с тремя страницами на которых пользователи смогут найти всю нужную для них информацию.",
+        "description": "Portfolio project for figure skating coach. This is a landing page with three pages where customers can findhelpful information.",
+        "link": "https://nina-lyko.github.io/coach/",
+        "isReady": true
+    },
+    {
+        "id": "vikdrums",
+        "name": "Vikdrums.com.ua",
+        "imgUrl": "https://raw.githubusercontent.com/andr-ll/portfolio/gh-pages/assets/img/Products/Vikdrims.png",
+        "descriptionRus": "Сайт для учеников музыкальной школы, которые занимаются играй на ударной установке. Основной идеей проекта является возможность получения нот, аудио файлов и видео для занятий из любого места. Такая практика помогаетученикам лучше усваивать информацию полученую на уроке и закреплять свои знания.",
+        "description": "This site was developed for music school students who learn how to play drums. The main idea of this project is to provide access to the charts, audio and video materials from anywhere. This practic can help students better understand and get familiar with information that was given during the lesson.",
+        "link": "https://vikdrums.herokuapp.com",
+        "isReady": true
+    }, 
+    {
+        "id": "coach",
+        "name": "Figure Skating Coach",
+        "imgUrl": "/img/coach.png",
+        "descriptionRus": "Проект-портфолио для тренера по фигурному катанию. Лендинг пейдж с тремя страницами на которых пользователи смогут найти всю нужную для них информацию.",
+        "description": "Portfolio project for figure skating coach. This is a landing page with three pages where customers can findhelpful information.",
+        "link": "https://nina-lyko.github.io/coach/",
+        "isReady": true
+    }
+]

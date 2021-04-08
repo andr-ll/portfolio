@@ -1,0 +1,45 @@
+.container {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 170px;
+    padding: 0 40px;
+
+    i {
+        animation: return 2s ease infinite;
+    }
+
+    a {
+        font-size: 20px;
+    }
+}
+
+.text-wrapper {
+
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 20px;
+
+    h1 {
+        font-size: 60px;
+        margin-right: 20px;
+        color: red;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+}
+
+@keyframes return {
+    from {
+        transform: translateX(2px);
+    }
+    50% {
+        transform: translateX(-7px);
+    }
+    to {
+        transform: translateX(2px);
+    }
+}
+
