@@ -9,14 +9,14 @@
     {
         "id": "vikdrums",
         "name": "Vikdrums.com.ua",
-        "imgUrl": "/img/vikdrums.png",
+        "imgUrl": "/img/vikdrums.jpg",
         "description": "This web-site was developed for music school students who learn how to play drums. The main idea of this project is to provide access to the charts, audio and video materials from anywhere. This practic can help students to understand the subject better and to get familiar with information that was given during the lesson.",
         "link": "https://vikdrums.herokuapp.com"
     }, 
     {
         "id": "figure skating coach",
         "name": "Figure Skating Coach",
-        "imgUrl": "/img/coach.png",
+        "imgUrl": "/img/coach.jpg",
         "description": "Portfolio project for figure skating coach. This is a landing page with three pages where customers can find helpful information for themselfs.",
         "link": "https://nina-lyko.github.io/coach/"
     }

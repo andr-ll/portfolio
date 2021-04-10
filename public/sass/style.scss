@@ -130,6 +130,10 @@ footer {
 }
 
 @media (max-width: 1000px) {
+    html {
+        height: -webkit-fill-available;
+    }
+
     .desktop-only {
         display: none !important;
     }
