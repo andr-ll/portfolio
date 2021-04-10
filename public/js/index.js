@@ -1,6 +1,10 @@
 import createElem from "./modules/createElem.js";
 import Form from "./modules/form.js";
 import request from "./modules/request.js";
+import WriteBanner from "./modules/write_banner.js";
+
+const writeBanner = new WriteBanner()
+writeBanner.write()
 
 const form = new Form()
 const formHTML = document.querySelector('form')
@@ -29,3 +33,6 @@ formHTML.addEventListener('submit', async (evt) => {
     formHTML.reset()
     return
 })
+
+
+

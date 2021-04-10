@@ -1,13 +1,17 @@
 <div class="container">
-    <h1>Hello :)</h1>
-    <form action="">
+    <h1 id="banner"></h1>
+
+    <div class="main-info">
+        <h2>Main info will be here</h2>
+    </div>
+    <form>
         <h4>Contact me!</h4>
         <div class="fields">
             <div class="inputs">
-                <input type="text" name="name" placeholder="Name" maxlength="20">
-                <input type="email" name="email" placeholder="Email" maxlength="40">
+                <input type="text" name="name" placeholder="Your Name" maxlength="20" inputmode="email">
+                <input type="email" name="email" placeholder="Your Email" maxlength="40" inputmode="email">
             </div>
-            <textarea type="text" name="message" placeholder="Message" maxlength="200"></textarea>
+            <textarea type="text" name="message" placeholder="Message" maxlength="200" inputmode="email"></textarea>
         </div>
         <button type="submit">Send!</button>
     </form>

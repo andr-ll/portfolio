@@ -1,3 +1,15 @@
-<a href="/projects">Go Back</a>
-<h2>{{{project.name}}}</h2>
-<img src="{{{project.imgUrl}}}" alt="">
+<h2 class="label">{{{project.name}}}</h2>
+
+<div class="container">
+
+    <img src="{{{project.imgUrl}}}" alt="">
+    <div class="description">
+        <p>{{project.description}}</p>
+        <div class="links">
+            <a href="/projects" class="back">Go Back</a>
+            <a href="{{{project.link}}}" target="_blank" class="visit">Visit the site</a>
+        </div>
+    </div>
+
+
+</div>

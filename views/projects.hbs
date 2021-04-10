@@ -1,3 +1,9 @@
-{{#each projects}}
-    <a href="/project/{{id}}">{{id}}</a>    
-{{/each}}
+<h2 class="banner">My recent projects:</h2>
+<div class="container">
+    {{#each projects}}
+    <a href="/project/{{id}}">
+        <img src="{{imgUrl}}" alt="">
+        {{id}}
+    </a>
+    {{/each}}
+</div>

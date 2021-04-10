@@ -5,7 +5,8 @@ export default class IndexController {
     mainPage = (req, res, next) => {
         res.render('homepage', {
             title: "Home | Andr-ll",
-            style: `<link rel="stylesheet" href="/css/homepage.min.css">`,
+            style: `<link rel="stylesheet" href="/css/homepage.min.css">\n
+            <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">`,
             script: `<script src="/js/index.js" type="module" defer></script>`
         })
     }
@@ -21,7 +22,7 @@ export default class IndexController {
     projectsPage = (req, res, next) => {
         res.render('projects', {
             title: "Projects",
-            // style: `<link rel="stylesheet" href="/css/projects.min.css">`,
+            style: `<link rel="stylesheet" href="/css/projects.min.css">`,
             projects
         })
     }
