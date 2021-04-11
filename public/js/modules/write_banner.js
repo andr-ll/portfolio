@@ -10,6 +10,6 @@ export default class WriteBanner {
       document.getElementById("banner").textContent += this.text.charAt(this.count);
       this.count++;
       setTimeout(this.write.bind(this), this.speed);
-    }
+    } 
   }
 }

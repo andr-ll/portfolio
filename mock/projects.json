@@ -3,21 +3,21 @@
         "id": "online-shop",
         "name": "Online Shop",
         "imgUrl": "/img/test-shop.png",
-        "description": "My first full-stack application which I developed by the end of Web-Developer course. This project was build with the following technologies: React, Redux, Express, PostgreSQL, TyoeORM, TypeScript.",
+        "description": "My first full-stack application which was developed as a final degree app for The Web-Developer course. This project was build with the following technologies: React, Redux, Express, PostgreSQL, TyoeORM, TypeScript.",
         "link": "https://test-shop-client.herokuapp.com"
     },
     {
         "id": "vikdrums",
-        "name": "Vikdrums.com.ua",
+        "name": "Vikdrums",
         "imgUrl": "/img/vikdrums.jpg",
-        "description": "This web-site was developed for music school students who learn how to play drums. The main idea of this project is to provide access to the charts, audio and video materials from anywhere. This practic can help students to understand the subject better and to get familiar with information that was given during the lesson.",
+        "description": "This web-site was developed for students of a music school who learn how to play drums. The main idea of this project is to provide access to the charts, audio and video materials from anywhere. This practic can help students to understand the subject better and to get familiar with information that was provided during the lesson.",
         "link": "https://vikdrums.herokuapp.com"
     }, 
     {
         "id": "figure skating coach",
         "name": "Figure Skating Coach",
         "imgUrl": "/img/coach.jpg",
-        "description": "Portfolio project for figure skating coach. This is a landing page with three pages where customers can find helpful information for themselfs.",
+        "description": "Portfolio project for the figure skating coach. This is a landing page with three pages where customers can find helpful information for themselfs. Application is created with React.js",
         "link": "https://nina-lyko.github.io/coach/"
     }
 ]

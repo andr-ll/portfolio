@@ -39,5 +39,9 @@ app.use(errorMiddleware);
 
 
 app.listen(PORT, () => {
-    console.log(`✅ Server version ${version} is running in ${process.env.NODE_ENV.toUpperCase()} mode on port ${PORT}...`);
+    if (process.env.NODE_ENV === "development") {
+        console.log(`✅ Server version ${version} is running in ${process.env.NODE_ENV.toUpperCase()} mode on http://localhost:${PORT}...`);
+    } else {
+        console.log(`✅ Server version ${version} is running on port ${PORT}...`);
+    }
 });

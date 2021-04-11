@@ -25,6 +25,7 @@ body {
     justify-content: space-between;
     min-height: 100vh;
     font-family: "Lexend", sans-serif;
+    background-color: #fafafa;
 }
 
 .container {
@@ -101,7 +102,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: #eeeeee;
+    border-top: 1px solid #d3d3d3;
 
     .wrapper {
         display: flex;
@@ -130,9 +131,6 @@ footer {
 }
 
 @media (max-width: 1000px) {
-    html {
-        height: -webkit-fill-available;
-    }
 
     .desktop-only {
         display: none !important;
@@ -157,7 +155,6 @@ footer {
         justify-content: space-between;
         align-items: center;
         min-height: 100vh;
-        min-height: -webkit-fill-available;
         font-family: "Poppins", sans-serif;
     }
 
@@ -178,6 +175,11 @@ footer {
             font-size: 20px;
             cursor: pointer;
         }
+
+        nav a {
+            width: 90px;
+            text-align: center;
+        }
     }
 
     nav {
@@ -195,7 +197,6 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        background-color: #eeeeee;
 
         .wrapper {
             width: 90vw;

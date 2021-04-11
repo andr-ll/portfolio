@@ -39,9 +39,11 @@
     .container {
         display: flex;
         flex-direction: column;
-        justify-content: unset;
+        justify-content: space-around;
         flex-grow: unset;
+        min-height: 65vh;
         margin: 35px auto;
+
     
         h2 {
             font-weight: 500;

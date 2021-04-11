@@ -12,23 +12,70 @@
         position: relative;
         font-size: 38px;
         font-weight: 400;
-        font-family: 'Source Code Pro', monospace;
+        font-family: "Source Code Pro", monospace;
 
         &:after {
-            content: '_';
+            content: "_";
             color: orange;
             position: absolute;
             right: -20px;
-            animation: blink .9s infinite;
+            animation: blink 0.9s infinite;
         }
     }
 
-    .main-info {
+    .about {
         margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            margin-bottom: 30px;
+        }
     }
 
-    button {
-        border: 1px solid black;
+    .projects {
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+            font-size: 24px;
+        }
+
+        a {
+            color: blue;
+            font-weight: 800;
+            font-size: 56px;
+            margin-top: 20px;
+            text-transform: uppercase;
+            position: relative;
+            animation: shine 4s ease infinite;
+            text-shadow: 0 0 1px black;
+
+            &:after {
+                position: absolute;
+                right: -60px;
+                top: -3px;
+                content: "<<";
+                animation: after-move 2s ease infinite;
+            }
+
+            &:before {
+                position: absolute;
+                left: -60px;
+                top: -3px;
+                content: ">>";
+                animation: before-move 2s ease infinite;
+            }
+        }
+    }
+
+    button,
+    .button {
+        border: 1px solid blue;
+        color: blue;
         padding: 10px 15px;
         border-radius: 10px;
         transition: color 0.5s ease;
@@ -41,20 +88,30 @@
     }
 
     form {
-        margin-top: 20px;
+        margin: 40px auto;
         width: 600px;
         max-width: 600px;
-        height: 300px;
+        min-height: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
 
-        h4 {
+        h4,
+        h3 {
             margin-bottom: 15px;
         }
 
+        h4 {
+            font-size: 18px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
         button {
+            margin-top: 15px;
             font-size: 14px;
             padding: 5px 15px;
         }
@@ -89,25 +146,49 @@
 
         .error {
             color: red;
-            margin-top: 10px;
+            margin-top: 20px;
         }
 
         .loading,
         .success {
             position: absolute;
+            font-weight: 400;
+            font-family: "Lexend", sans-serif;
             width: 100%;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             color: black;
-            background-color: white;
+            background-color: #fafafa;
             z-index: 2;
         }
 
         .loading {
             animation: appear 2s ease infinite;
         }
+    }
+}
+
+@keyframes shine {
+    from {
+        color: blue;
+    }
+
+    25% {
+        color: rgb(66, 209, 0);
+    }
+
+    50% {
+        color: rgb(255, 217, 0);
+    }
+
+    75% {
+        color: rgb(212, 0, 255);
+    }
+
+    to {
+        color: blue;
     }
 }
 
@@ -134,8 +215,55 @@
     }
 }
 
-@media (max-width: 1000px) {
+@keyframes after-move {
+    from,
+    to {
+        right: -64px;
+    }
 
+    50% {
+        right: -154px;
+        letter-spacing: 14px;
+    }
+}
+
+@keyframes before-move {
+    from,
+    to {
+        left: -64px;
+    }
+
+    50% {
+        left: -154px;
+        letter-spacing: 14px;
+    }
+}
+
+@keyframes after-move-mob {
+    from,
+    to {
+        right: -44px;
+    }
+
+    50% {
+        right: -84px;
+        letter-spacing: 8px;
+    }
+}
+
+@keyframes before-move-mob {
+    from,
+    to {
+        left: -44px;
+    }
+
+    50% {
+        left: -84px;
+        letter-spacing: 8px;
+    }
+}
+
+@media (max-width: 1000px) {
     .container {
         display: flex;
         flex-direction: column;
@@ -149,23 +277,70 @@
             position: relative;
             font-size: 22px;
             font-weight: 400;
-            font-family: 'Source Code Pro', monospace;
-    
+            font-family: "Source Code Pro", monospace;
+
             &:after {
-                content: '_';
+                content: "_";
                 color: orange;
                 position: absolute;
                 right: -12px;
-                animation: blink .9s infinite;
+                animation: blink 0.9s infinite;
             }
         }
 
-        .main-info {
+        .about {
             margin: 40px auto;
+            text-align: center;
+            width: 83vw;
+
+            h2 {
+                margin-bottom: 20px;
+            }
         }
 
-        button {
-            border: 1px solid black;
+        .projects {
+            margin: 10px auto 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                font-size: 24px;
+            }
+
+            a {
+                text-align: center;
+                color: blue;
+                font-weight: 800;
+                font-size: 36px;
+                margin-top: 20px;
+                text-transform: uppercase;
+                position: relative;
+                animation: shine 4s ease infinite;
+                text-shadow: 0 0 1px black;
+
+                &:after {
+                    position: absolute;
+                    right: -60px;
+                    top: -3px;
+                    content: "<<";
+                    animation: after-move-mob 2s ease infinite;
+                }
+
+                &:before {
+                    position: absolute;
+                    left: -60px;
+                    top: -3px;
+                    content: ">>";
+                    animation: before-move-mob 2s ease infinite;
+                }
+            }
+        }
+
+        button,
+        .button {
+            border: 1px solid blue;
+            color: blue;
             padding: 15px 20px;
             font-size: 16px;
             border-radius: 10px;
@@ -179,8 +354,9 @@
         }
 
         form {
-            margin-top: 10px;
-            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            width: 90vw;
             max-width: 100%;
             height: fit-content;
             display: flex;
@@ -194,8 +370,8 @@
             }
 
             button {
-                font-size: 20px;
-                padding: 15px 30px;
+                font-size: 16px;
+                padding: 12px 25px;
             }
 
             .fields {
@@ -236,20 +412,22 @@
 
             .error {
                 color: red;
-                margin-top: 10px;
+                margin-top: 20px;
                 font-size: 18px;
             }
 
             .loading,
             .success {
                 position: absolute;
+                font-weight: 300;
+                font-family: "Lexend", sans-serif;
                 width: 100%;
                 height: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 color: black;
-                background-color: white;
+                background-color: #fafafa;
                 z-index: 2;
                 text-align: center;
                 font-size: 18px;

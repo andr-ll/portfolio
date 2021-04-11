@@ -1,3 +1,7 @@
+.label {
+    font-size: 36px;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -60,7 +64,8 @@
 @media (max-width: 1000px) {
 
     .label {
-        margin: 30px auto;
+        margin: 20px auto 20px;
+        font-size: 24px;
     }
 
     .container {
@@ -87,7 +92,7 @@
             align-items: center;
     
             p {
-                font-size: 16px;
+                font-size: 18px;
                 width: 92vw;
                 text-align: center;
             }
