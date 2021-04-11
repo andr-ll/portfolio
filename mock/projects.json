@@ -3,7 +3,7 @@
         "id": "online-shop",
         "name": "Online Shop",
         "imgUrl": "/img/test-shop.png",
-        "description": "My first full-stack application which was developed as a final degree app for The Web-Developer course. This project was build with the following technologies: React, Redux, Express, PostgreSQL, TyoeORM, TypeScript.",
+        "description": "My first full-stack application which was developed as a final degree app for The Web-Developer course. This project was built with following technologies: React, Redux, Express, PostgreSQL, TyoeORM, TypeScript.",
         "link": "https://test-shop-client.herokuapp.com"
     },
     {
