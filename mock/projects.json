@@ -7,6 +7,13 @@
         "link": "https://test-shop-client.herokuapp.com"
     },
     {
+        "id": "fix-tel",
+        "name": "Fix-Tel.ru",
+        "imgUrl": "/img/fix-tel.png",
+        "description": "The web-site for phone maintenance company. It was built on Tilda platform with all functionality that is included in the platform.",
+        "link": "https://fix-tel.ru"
+    },
+    {
         "id": "vikdrums",
         "name": "Vikdrums",
         "imgUrl": "/img/vikdrums.jpg",

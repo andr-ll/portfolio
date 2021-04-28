@@ -8,8 +8,9 @@
     justify-content: space-around;
 
     img {
+        min-height: 350px;
         width: 500px;
-        object-fit: contain;
+        object-fit: cover;
         object-position: center;
         border-radius: 15px;
         margin-right: 40px;
@@ -77,12 +78,13 @@
         padding-bottom: 30px;
     
         img {
+            min-height: unset;
             width: 90vw;
             object-fit: contain;
             object-position: center;
             border-radius: 15px;
             margin-right: unset;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
     
         .description {
