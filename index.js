@@ -10,7 +10,7 @@ import { emailMessage } from './_handlers/routes/email-message.route.js';
 import { errorMiddleware } from './_handlers/middleware/error.middleware.js';
 import secure from 'ssl-express-www';
 
-dotenv.config({ path: './config/.env' });
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT;
